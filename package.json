@@ -2,25 +2,38 @@
     "name": "vscode-nginx",
     "displayName": "nginx.conf",
     "description": "Syntax highlighter for nginx conf files.",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "shanoor",
     "engines": {
         "vscode": "^1.0.0"
+    },
+    "repository": {
+        "type": "GitHub",
+        "url": "https://github.com/shanoor/vscode-nginx"
     },
     "categories": [
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "NGINX",
-            "aliases": ["NGINX"],
-            "extensions": [".conf"],
-            "configuration": "./nginx.configuration.json"
-        }],
-        "grammars": [{
-            "language": "NGINX",
-            "scopeName": "source.nginx",
-            "path": "./syntaxes/nginx.tmLanguage"
-        }]
-    }
+        "languages": [
+            {
+                "id": "NGINX",
+                "aliases": [
+                    "NGINX"
+                ],
+                "extensions": [
+                    ".conf"
+                ],
+                "configuration": "./nginx.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "NGINX",
+                "scopeName": "source.nginx",
+                "path": "./syntaxes/nginx.tmLanguage"
+            }
+        ]
+    },
+    "icon": "./nginx_logo.png"
 }
