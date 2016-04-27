@@ -35,5 +35,5 @@
             }
         ]
     },
-    "icon": "./nginx_logo.png"
+    "icon": "nginx_logo.png"
 }
