@@ -2,7 +2,7 @@
     "name": "vscode-nginx",
     "displayName": "nginx.conf",
     "description": "Syntax highlighter for nginx conf files.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "shanoor",
     "engines": {
         "vscode": "^1.0.0"
