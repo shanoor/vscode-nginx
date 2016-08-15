@@ -220,6 +220,12 @@
 			<key>name</key>
 			<string>constant.language.module.http.userid</string>
 		</dict>
+        <dict>
+            <key>match</key>
+            <string>\b(ssl|ssl_buffer_size|ssl_certificate|ssl_certificate_key|ssl_ciphers|ssl_client_certificate|ssl_crl|ssl_dhparam|ssl_ecdh_curve|ssl_password_file|ssl_prefer_server_ciphers|ssl_protocols|ssl_session_cache|ssl_session_ticket_key|ssl_session_tickets|ssl_session_timeout|ssl_stapling|ssl_stapling_file|ssl_stapling_responder|ssl_stapling_verify|ssl_trusted_certificate|ssl_verify_client|ssl_verify_depth)\b</string>
+			<key>name</key>
+			<string>constant.language.directive.module.http</string>
+        </dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.nginx</string>
