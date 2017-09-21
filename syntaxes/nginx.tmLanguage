@@ -90,7 +90,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(daemon|env|debug_points|error_log|log_not_found|include|lock_file|master_process|pid|ssl_engine|timer_resolution|types_hash_max_size|user|worker_cpu_affinity|worker_priority|worker_processes|worker_rlimit_core|worker_rlimit_nofile|worker_rlimit_sigpending|working_directory)\b</string>
+			<string>\b(daemon|env|debug_points|error_log|log_not_found|include|lock_file|master_process|pid|ssl_engine|timer_resolution|types_hash_max_size|user|worker_cpu_affinity|worker_priority|worker_processes|worker_rlimit_core|worker_rlimit_nofile|worker_rlimit_sigpending|working_directory|try_files)\b</string>
 			<key>name</key>
 			<string>constant.language.directive.module.main</string>
 		</dict>
