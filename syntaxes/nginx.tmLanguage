@@ -126,7 +126,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(autoindex|autoindex_exact_size|autoindex_localtime)\b</string>
+			<string>\b(autoindex|autoindex_exact_size|autoindex_format|autoindex_localtime)\b</string>
 			<key>name</key>
 			<string>constant.language.module.http.autoindex</string>
 		</dict>
@@ -183,6 +183,12 @@
 			<string>\b(limit_zone|limit_conn)\b</string>
 			<key>name</key>
 			<string>constant.language.module.http.limit_zone</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(limit_req|limit_req_log_level|limit_req_status|limit_req_zone)\b</string>
+			<key>name</key>
+			<string>constant.language.module.http.limit_req</string>
 		</dict>
 		<dict>
 			<key>match</key>
