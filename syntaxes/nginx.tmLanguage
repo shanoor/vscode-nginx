@@ -226,6 +226,12 @@
 			<key>name</key>
 			<string>constant.language.directive.module.http</string>
         </dict>
+		<dict>
+			<key>match</key>
+			<string>\$\w+</string>
+			<key>name</key>
+			<string>variable</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.nginx</string>
