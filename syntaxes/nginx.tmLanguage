@@ -120,6 +120,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\b(auth_jwt|auth_jwt_header_set|auth_jwt_claim_set|auth_jwt_key_file)\b</string>
+			<key>name</key>
+			<string>constant.language.module.http.auth_jwt</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(autoindex|autoindex_exact_size|autoindex_localtime)\b</string>
 			<key>name</key>
 			<string>constant.language.module.http.autoindex</string>
