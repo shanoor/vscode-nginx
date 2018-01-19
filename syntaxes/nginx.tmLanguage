@@ -244,6 +244,12 @@
 			<key>name</key>
 			<string>constant.language.module.http.userid</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(uwsgi_bind|uwsgi_buffer_size|uwsgi_buffering|uwsgi_buffers|uwsgi_busy_buffers_size|uwsgi_cache|uwsgi_cache_background_update|uwsgi_cache_bypass|uwsgi_cache_key|uwsgi_cache_lock|uwsgi_cache_lock_age|uwsgi_cache_lock_timeout|uwsgi_cache_max_range_offset|uwsgi_cache_methods|uwsgi_cache_min_uses|uwsgi_cache_path|uwsgi_cache_purge|uwsgi_cache_revalidate|uwsgi_cache_use_stale|uwsgi_cache_valid|uwsgi_connect_timeout|uwsgi_force_ranges|uwsgi_hide_header|uwsgi_ignore_client_abort|uwsgi_ignore_headers|uwsgi_intercept_errors|uwsgi_limit_rate|uwsgi_max_temp_file_size|uwsgi_modifier1|uwsgi_modifier2|uwsgi_next_upstream|uwsgi_next_upstream_timeout|uwsgi_next_upstream_tries|uwsgi_no_cache|uwsgi_param|uwsgi_pass|uwsgi_pass_header|uwsgi_pass_request_body|uwsgi_pass_request_headers|uwsgi_read_timeout|uwsgi_request_buffering|uwsgi_send_timeout|uwsgi_ssl_certificate|uwsgi_ssl_certificate_key|uwsgi_ssl_ciphers|uwsgi_ssl_crl|uwsgi_ssl_name|uwsgi_ssl_password_file|uwsgi_ssl_protocols|uwsgi_ssl_server_name|uwsgi_ssl_session_reuse|uwsgi_ssl_trusted_certificate|uwsgi_ssl_verify|uwsgi_ssl_verify_depth|uwsgi_store|uwsgi_store_access|uwsgi_temp_file_write_size|uwsgi_temp_path)\b</string>
+			<key>name</key>
+			<string>constant.language.module.http.uwsgi</string>
+		</dict>
         <dict>
             <key>match</key>
             <string>\b(ssl|ssl_buffer_size|ssl_certificate|ssl_certificate_key|ssl_ciphers|ssl_client_certificate|ssl_crl|ssl_dhparam|ssl_ecdh_curve|ssl_password_file|ssl_prefer_server_ciphers|ssl_protocols|ssl_session_cache|ssl_session_ticket_key|ssl_session_tickets|ssl_session_timeout|ssl_stapling|ssl_stapling_file|ssl_stapling_responder|ssl_stapling_verify|ssl_trusted_certificate|ssl_verify_client|ssl_verify_depth)\b</string>
