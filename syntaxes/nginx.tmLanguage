@@ -102,6 +102,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\b(add_before_body|add_after_body|addition_types)\b</string>
+			<key>name</key>
+			<string>constant.language.module.http.addition</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(allow|deny)\b</string>
 			<key>name</key>
 			<string>constant.language.module.http.access</string>
