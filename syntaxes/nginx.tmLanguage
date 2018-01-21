@@ -96,9 +96,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(alias|client_body_in_file_only|client_body_buffer_size|client_body_temp_path|client_body_timeout|client_header_buffer_size|client_header_timeout|client_max_body_size|default_type|error_page|index\ |internal|keepalive_timeout|large_client_header_buffers|limit_except|limit_rate|listen|location|msie_padding|msie_refresh|optimize_server_names|port_in_redirect|recursive_error_pages|root|satisfy_any|send_timeout|sendfile|server|server_name|server_names_hash_max_size|server_names_hash_bucket_size|tcp_nodelay|tcp_nopush|types\ )\b</string>
+			<string>\b(alias|chunked_transfer_encoding|client_body_in_file_only|client_body_buffer_size|client_body_temp_path|client_body_timeout|client_header_buffer_size|client_header_timeout|client_max_body_size|default_type|error_page|index\ |internal|keepalive_timeout|keepalive_requests|large_client_header_buffers|limit_except|limit_rate|listen|location|msie_padding|msie_refresh|optimize_server_names|port_in_redirect|recursive_error_pages|reset_timedout_connection|resolver|resolver_timeout|root|satisfy_any|send_timeout|sendfile|server|server_name|server_names_hash_max_size|server_names_hash_bucket_size|tcp_nodelay|tcp_nopush|types\ |try_files)\b</string>
 			<key>name</key>
 			<string>constant.language.directive.module.http</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(add_before_body|add_after_body|addition_types)\b</string>
+			<key>name</key>
+			<string>constant.language.module.http.addition</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -114,7 +120,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(autoindex|autoindex_exact_size|autoindex_localtime)\b</string>
+			<string>\b(auth_jwt|auth_jwt_header_set|auth_jwt_claim_set|auth_jwt_key_file)\b</string>
+			<key>name</key>
+			<string>constant.language.module.http.auth_jwt</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(autoindex|autoindex_exact_size|autoindex_format|autoindex_localtime)\b</string>
 			<key>name</key>
 			<string>constant.language.module.http.autoindex</string>
 		</dict>
@@ -174,6 +186,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\b(limit_req|limit_req_log_level|limit_req_status|limit_req_zone)\b</string>
+			<key>name</key>
+			<string>constant.language.module.http.limit_req</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(access_log|log_format)\b</string>
 			<key>name</key>
 			<string>constant.language.module.http.log</string>
@@ -192,9 +210,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(proxy_buffer_size|proxy_buffering|proxy_buffers|proxy_busy_buffers_size|proxy_cache|proxy_cache_background_update|proxy_cache_bypass|proxy_cache_convert_head|proxy_cache_key|proxy_cache_lock|proxy_cache_lock_age|proxy_cache_lock_timeout|proxy_cache_max_range_offset|proxy_cache_methods|proxy_cache_min_uses|proxy_cache_path|proxy_cache_purge|proxy_cache_revalidate|proxy_cache_use_stale|proxy_cache_valid|proxy_connect_timeout|proxy_headers_hash_bucket_size|proxy_headers_hash_max_size|proxy_hide_header|proxy_ign|ore_client_abortproxy_intercept_errors|proxy_max_temp_file_size|proxy_method|proxy_next_upstream|proxy_pass|proxy_pass_header|proxy_pass_request_body|proxy_pass_request_headers|proxy_|redirectproxy_read_timeout|proxy_redirect|proxy_redirect_errors|proxy_send_lowat|proxy_send_timeout|proxy_set_body|proxy_set_header|proxy_store|proxy_store_access|proxy_temp_file_write_size|proxy_t|emp_pathproxy_upstream_fail_timeout|proxy_upstream_max_fails)\b</string>
+			<string>\b(proxy_buffer_size|proxy_buffering|proxy_buffers|proxy_busy_buffers_size|proxy_cache|proxy_cache_background_update|proxy_cache_bypass|proxy_cache_convert_head|proxy_cache_key|proxy_cache_lock|proxy_cache_lock_age|proxy_cache_lock_timeout|proxy_cache_max_range_offset|proxy_cache_methods|proxy_cache_min_uses|proxy_cache_path|proxy_cache_purge|proxy_cache_revalidate|proxy_cache_use_stale|proxy_cache_valid|proxy_connect_timeout|proxy_headers_hash_bucket_size|proxy_headers_hash_max_size|proxy_hide_header|proxy_http_version|proxy_ignore_client_abort|proxy_intercept_errors|proxy_max_temp_file_size|proxy_method|proxy_next_upstream|proxy_next_upstream_tries|proxy_next_upstream_timeout|proxy_pass|proxy_pass_header|proxy_pass_request_body|proxy_pass_request_headers|proxy_read_timeout|proxy_redirect|proxy_redirect_errors|proxy_send_lowat|proxy_send_timeout|proxy_set_body|proxy_set_header|proxy_store|proxy_store_access|proxy_temp_file_write_size|proxy_t|emp_pathproxy_upstream_fail_timeout|proxy_upstream_max_fails)\b</string>
 			<key>name</key>
 			<string>constant.language.module.http.proxy</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(set_real_ip_from|real_ip_header|real_ip_recursive)\b</string>
+			<key>name</key>
+			<string>constant.language.module.http.realip</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -220,12 +244,24 @@
 			<key>name</key>
 			<string>constant.language.module.http.userid</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(uwsgi_bind|uwsgi_buffer_size|uwsgi_buffering|uwsgi_buffers|uwsgi_busy_buffers_size|uwsgi_cache|uwsgi_cache_background_update|uwsgi_cache_bypass|uwsgi_cache_key|uwsgi_cache_lock|uwsgi_cache_lock_age|uwsgi_cache_lock_timeout|uwsgi_cache_max_range_offset|uwsgi_cache_methods|uwsgi_cache_min_uses|uwsgi_cache_path|uwsgi_cache_purge|uwsgi_cache_revalidate|uwsgi_cache_use_stale|uwsgi_cache_valid|uwsgi_connect_timeout|uwsgi_force_ranges|uwsgi_hide_header|uwsgi_ignore_client_abort|uwsgi_ignore_headers|uwsgi_intercept_errors|uwsgi_limit_rate|uwsgi_max_temp_file_size|uwsgi_modifier1|uwsgi_modifier2|uwsgi_next_upstream|uwsgi_next_upstream_timeout|uwsgi_next_upstream_tries|uwsgi_no_cache|uwsgi_param|uwsgi_pass|uwsgi_pass_header|uwsgi_pass_request_body|uwsgi_pass_request_headers|uwsgi_read_timeout|uwsgi_request_buffering|uwsgi_send_timeout|uwsgi_ssl_certificate|uwsgi_ssl_certificate_key|uwsgi_ssl_ciphers|uwsgi_ssl_crl|uwsgi_ssl_name|uwsgi_ssl_password_file|uwsgi_ssl_protocols|uwsgi_ssl_server_name|uwsgi_ssl_session_reuse|uwsgi_ssl_trusted_certificate|uwsgi_ssl_verify|uwsgi_ssl_verify_depth|uwsgi_store|uwsgi_store_access|uwsgi_temp_file_write_size|uwsgi_temp_path)\b</string>
+			<key>name</key>
+			<string>constant.language.module.http.uwsgi</string>
+		</dict>
         <dict>
             <key>match</key>
             <string>\b(ssl|ssl_buffer_size|ssl_certificate|ssl_certificate_key|ssl_ciphers|ssl_client_certificate|ssl_crl|ssl_dhparam|ssl_ecdh_curve|ssl_password_file|ssl_prefer_server_ciphers|ssl_protocols|ssl_session_cache|ssl_session_ticket_key|ssl_session_tickets|ssl_session_timeout|ssl_stapling|ssl_stapling_file|ssl_stapling_responder|ssl_stapling_verify|ssl_trusted_certificate|ssl_verify_client|ssl_verify_depth)\b</string>
 			<key>name</key>
 			<string>constant.language.directive.module.http</string>
         </dict>
+		<dict>
+			<key>match</key>
+			<string>\$\w+</string>
+			<key>name</key>
+			<string>variable</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.nginx</string>
