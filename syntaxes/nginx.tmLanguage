@@ -168,7 +168,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(gzip|gzip_buffers|gzip_comp_level|gzip_disable|gzip_http.version|gzip_min_length|gzip_proxied|gzip_types|gzip_vary)\b</string>
+			<string>\b(gzip|gzip_buffers|gzip_comp_level|gzip_disable|gzip_http.version|gzip_min_length|gzip_proxied|gzip_static|gzip_types|gzip_vary)\b</string>
 			<key>name</key>
 			<string>constant.language.module.http.gzip</string>
 		</dict>
