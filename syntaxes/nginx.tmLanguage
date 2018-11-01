@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>conf</string>
+		<string>nginx</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>\{\s*$</string>
