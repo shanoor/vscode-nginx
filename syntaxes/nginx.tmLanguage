@@ -229,7 +229,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(break|if|return|reqrite|set|uninitialized_variable_warn)\b</string>
+			<string>\b(break|if|return|rewrite|set|uninitialized_variable_warn)\b</string>
 			<key>name</key>
 			<string>constant.language.module.http.rewrite</string>
 		</dict>
